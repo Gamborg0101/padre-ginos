@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { StrictMode, useEffect, useState } from "react";
 import Pizza from "./Pizza";
 
 const intl = new Intl.NumberFormat("en-US", {
@@ -47,7 +47,7 @@ export default function Order() {
               {pizzaTypes.map((pizza) => (
                 <option key={pizza.id} value={pizza.id}>
                   {pizza.name}
-                </option>
+                </option> 
               ))}
             </select>
           </div>
